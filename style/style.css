@@ -19,10 +19,20 @@ body {
   padding: 10px;
   border-radius: 30px;
 }
+@media (max-width: 350px) {
+  .titulos-productos {
+    font-size: 11px;
+  }
+}
 .iconos {
   color: black;
   font-size: 20px;
   transition: 1s;
+}
+@media (max-width: 350px) {
+  .iconos {
+    font-size: 16px;
+  }
 }
 .iconos:hover {
   font-size: 25px;
@@ -110,6 +120,11 @@ header h1 {
   transform: translateY(-48%);
   z-index: 0;
 }
+@media (max-width: 350px) {
+  #cart-menu {
+    left: 55%;
+  }
+}
 #cart-menu.active {
   display: block;
 }
@@ -189,6 +204,9 @@ main {
 
 .cart-item span {
   font-size: 14px;
+  padding: 5px;
+  background-color: cadetblue;
+  border-radius: 15px;
 }
 
 #cart-total-price {
@@ -196,7 +214,7 @@ main {
 }
 
 .eliminar-item {
-  border: 1px black solid;
+  border: 0px;
   border-radius: 15px;
   margin: 10px;
   font-size: 15px;

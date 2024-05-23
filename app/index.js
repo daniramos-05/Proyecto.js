@@ -31,36 +31,72 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function agregarAlCarrito(nombre, precio, imagenUrl) {
-    const productoTarjeta = document.createElement("li");
-    productoTarjeta.classList.add("cart-item");
-
-    const imagen = document.createElement("img");
-    imagen.src = imagenUrl;
-    imagen.alt = nombre;
-    productoTarjeta.appendChild(imagen);
-
-    const nombreProducto = document.createElement("span");
-    nombreProducto.textContent = nombre;
-    productoTarjeta.appendChild(nombreProducto);
-
-    const precioProducto = document.createElement("span");
-    precioProducto.classList.add("precio");
-    precioProducto.textContent = `$${precio.toFixed(2)}`;
-    ("$");
-    productoTarjeta.appendChild(precioProducto);
-
-    const botonEliminar = document.createElement("button");
-    botonEliminar.textContent = "X";
-    botonEliminar.classList.add("eliminar-item");
-    botonEliminar.addEventListener("click", function () {
-      cartItemsContainer.removeChild(productoTarjeta);
-      actualizarTotalCarrito();
+    let productoExistente = null;
+    const itemsEnCarrito = cartItemsContainer.querySelectorAll(".cart-item");
+    itemsEnCarrito.forEach(function (item) {
+      const idProducto = item.dataset.id;
+      if (idProducto === nombre) {
+        productoExistente = item;
+      }
     });
-    productoTarjeta.appendChild(botonEliminar);
 
-    cartItemsContainer.appendChild(productoTarjeta);
+    if (productoExistente) {
+      // Si el producto ya está en el carrito, aumenta la cantidad
+      const cantidadElemento = productoExistente.querySelector(".cantidad");
+      const cantidad = parseInt(cantidadElemento.textContent) + 1;
+      cantidadElemento.textContent = cantidad;
+    } else {
+      // Si el producto no está en el carrito, agrega un nuevo elemento
+      const productoTarjeta = document.createElement("li");
+      productoTarjeta.classList.add("cart-item");
+      productoTarjeta.dataset.id = nombre;
 
-    totalCarrito += precio;
+      const imagen = document.createElement("img");
+      imagen.src = imagenUrl;
+      imagen.alt = nombre;
+      productoTarjeta.appendChild(imagen);
+
+      const nombreProducto = document.createElement("span");
+      nombreProducto.classList.add("nombre");
+      nombreProducto.textContent = nombre;
+      productoTarjeta.appendChild(nombreProducto);
+
+      const precioProducto = document.createElement("span");
+      precioProducto.classList.add("precio");
+      precioProducto.textContent = `$${precio.toFixed(2)}`;
+      productoTarjeta.appendChild(precioProducto);
+
+      const cantidadProducto = document.createElement("span");
+      cantidadProducto.classList.add("cantidad");
+      cantidadProducto.textContent = "1";
+      productoTarjeta.appendChild(cantidadProducto);
+
+      const botonEliminar = document.createElement("button");
+      botonEliminar.textContent = "X";
+      botonEliminar.classList.add("eliminar-item");
+      botonEliminar.addEventListener("click", function () {
+        cartItemsContainer.removeChild(productoTarjeta);
+        actualizarTotalCarrito();
+      });
+      productoTarjeta.appendChild(botonEliminar);
+
+      cartItemsContainer.appendChild(productoTarjeta);
+    }
+
+    // Actualizar el total del carrito después de agregar un producto
+    actualizarTotalCarrito();
+  }
+
+  function actualizarTotalCarrito() {
+    let totalCarrito = 0;
+    const itemsEnCarrito = cartItemsContainer.querySelectorAll(".cart-item");
+    itemsEnCarrito.forEach(function (item) {
+      const precio = parseFloat(
+        item.querySelector(".precio").textContent.slice(1)
+      );
+      const cantidad = parseInt(item.querySelector(".cantidad").textContent);
+      totalCarrito += precio * cantidad;
+    });
     cartTotalPrice.textContent = totalCarrito.toFixed(2);
   }
 
