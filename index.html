@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venta de Ropa</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Venta de Ropa</h1>
+      <div id="cart">
+        <button id="cart-button"><i class="fa fa-cart-shopping"></i></button>
+        <span id="cart-total"></span>
+      </div>
+      <div id="cart-menu" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Carrito de Compras</h2>
+          <ul id="cart-items"></ul>
+          <div id="total">Total: $<span id="cart-total-price">0.00</span></div>
+          <button id="checkout-button">Comprar</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="productos">
+        <h2 class="titulos-productos">Todo el Stock</h2>
+        <div class="menu"></div>
+        <i
+          id="icono-todo"
+          class="iconos fa-solid fa-user-tie"
+          data-categoria="todo"
+        ></i>
+      </div>
+      <div class="productos">
+        <h2 class="titulos-productos">Remeras</h2>
+        <div class="menu"></div>
+        <i
+          id="icono-remeras"
+          class="iconos fa-solid fa-shirt"
+          data-categoria="remeras"
+        ></i>
+      </div>
+      <div class="productos">
+        <h2 class="titulos-productos">Calzado</h2>
+        <div class="menu"></div>
+        <i
+          id="icono-calzado"
+          class="iconos fa-solid fa-shoe-prints"
+          data-categoria="calzado"
+        ></i>
+      </div>
+      <div class="productos">
+        <h2 class="titulos-productos">Accesorios</h2>
+        <div class="menu"></div>
+        <i
+          id="icono-accesorios"
+          class="iconos fa-solid fa-glasses"
+          data-categoria="accesorios"
+        ></i>
+      </div>
+    </main>
+
+    <div class="contenedor-ropa">
+      <div class="ropa" data-categoria="remeras">
+        <h3>Remera</h3>
+        <h4>$1500</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/camisa-percha-fondo-verde.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="accesorios">
+        <h3>Piluso</h3>
+        <h4>$2000</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/accesorio-unisex-sombrero-pescador-beige.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="remeras">
+        <h3>Remera</h3>
+        <h4>$1600</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/camiseta-abstracta-pigmentada-natural.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="remeras">
+        <h3>Remera</h3>
+        <h4>$2000</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/camiseta-grafica-mockup-diseno-moda-presentado-percha-madera.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="remeras">
+        <h3>Remera</h3>
+        <h4>$1350</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/camiseta-regular-lisa-blanca-sobre-fondo-gris.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="calzado">
+        <h3>Zapatillas</h3>
+        <h4>$20000</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/fondo-retro-color-rojo-modelo-tenis.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="remeras">
+        <h3>Remera</h3>
+        <h4>$1350</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/frente-camiseta-negra-aislado.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="accesorios">
+        <h3>Lentes de Sol</h3>
+        <h4>$9000</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/gafas-montura-ligeramente-redondeada.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="accesorios">
+        <h3>Lentes de Sol</h3>
+        <h4>$6500</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/gafas-sol-transparentes-colores-bodegon.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="calzado">
+        <h3>Zapatillas</h3>
+        <h4>$27500</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/nuevo-par-zapatillas-blancas-aislado-blanco.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="remeras">
+        <h3>Remera</h3>
+        <h4>$1500</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/pared-ladrillo-encalado-camiseta-percha.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="accesorios">
+        <h3>Sombrero</h3>
+        <h4>$10000</h4>
+        <img class="img-ropa" src="./assets/img/sombrero-fieltro.png" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="accesorios">
+        <h3>Reloj</h3>
+        <h4>$26000</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/vida-muerta-dispositivo-tecnologico.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div class="ropa" data-categoria="calzado">
+        <h3>Zapatillas</h3>
+        <h4>$22500</h4>
+        <img
+          class="img-ropa"
+          src="./assets/img/zapatos-moda-zapatillas.png"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+          temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit
+          debitis repudiandae eius cupiditate exercitationem tempore fugiat,
+          quis dicta voluptatum!
+        </p>
+        <button>Comprar</button>
+      </div>
+    </div>
+    <script src="./app/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+{
+  "remeras": [
+    {
+      "categoria": "remeras",
+      "nombre": "Remera",
+      "precio": 1600,
+      "imagenUrl": "./assets/img/camiseta-abstracta-pigmentada-natural.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!",
+      "cantidad": 0
+    },
+    {
+      "categoria": "remeras",
+      "nombre": "Remera",
+      "precio": 2000,
+      "imagenUrl": "./assets/img/camiseta-grafica-mockup-diseno-moda-presentado-percha-madera.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    },
+    {
+      "categoria": "remeras",
+      "nombre": "Remera",
+      "precio": 1500,
+      "imagenUrl": "./assets/img/camisa-percha-fondo-verde.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    },
+    {
+      "categoria": "remeras",
+      "nombre": "Remera",
+      "precio": 1350,
+      "imagenUrl": "assets/img/frente-camiseta-negra-aislado.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    },
+    {
+      "categoria": "remeras",
+      "nombre": "Remera",
+      "precio": 1500,
+      "imagenUrl": "./assets/img/pared-ladrillo-encalado-camiseta-percha.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    },
+    {
+      "categoria": "remeras",
+      "nombre": "Remera",
+      "precio": 1350,
+      "imagenUrl": "assets/img/camiseta-regular-lisa-blanca-sobre-fondo-gris.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    }
+  ],
+  "accesorios": [
+    {
+      "categoria": "accesorios",
+      "nombre": "Piluso",
+      "precio": 2000,
+      "imagenUrl": "./assets/img/accesorio-unisex-sombrero-pescador-beige.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    },
+    {
+      "categoria": "accesorios",
+      "nombre": "Lentes de Sol",
+      "precio": 9000,
+      "imagenUrl": "./assets/img/gafas-montura-ligeramente-redondeada.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    },
+    {
+      "categoria": "accesorios",
+      "nombre": "Lentes de Sol",
+      "precio": 6500,
+      "imagenUrl": "./assets/img/gafas-sol-transparentes-colores-bodegon.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    },
+    {
+      "categoria": "accesorios",
+      "nombre": "Sombrero",
+      "precio": 10000,
+      "imagenUrl": "./assets/img/sombrero-fieltro.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    },
+    {
+      "categoria": "accesorios",
+      "nombre": "Reloj",
+      "precio": 26000,
+      "imagenUrl": "./assets/img/vida-muerta-dispositivo-tecnologico.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    }
+  ],
+  "calzado": [
+    {
+      "categoria": "calzado",
+      "nombre": "Zapatillas",
+      "precio": 20000,
+      "imagenUrl": "./assets/img/fondo-retro-color-rojo-modelo-tenis.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    },
+    {
+      "categoria": "calzado",
+      "nombre": "Zapatillas",
+      "precio": 27500,
+      "imagenUrl": "./assets/img/nuevo-par-zapatillas-blancas-aislado-blanco.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    },
+    {
+      "categoria": "calzado",
+      "nombre": "Zapatillas",
+      "precio": 22500,
+      "imagenUrl": "./assets/img/zapatos-moda-zapatillas.png",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia temporibus dolor facere eaque aut ea quam ab. Velit reprehenderit debitis repudiandae eius cupiditate exercitationem tempore fugiat, quis dicta voluptatum!"
+    }
+  ]
+}
